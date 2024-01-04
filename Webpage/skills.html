@@ -1,0 +1,139 @@
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Skills</title>
+                <style>
+                    *{
+                        margin: 0;
+                        padding:0;
+                        font-family: Arial, Helvetica, sans-serif;
+                    }
+                    h5{
+                        padding: 20px;
+                    }
+                    body{
+                        display: grid;
+                        grid-template-areas: "a"
+                        "b";
+                        grid-template-rows: max-content;
+                        height: 100vh;
+                        width: 100%;
+                    }
+                    .nav{
+                        display: flex;
+                        flex-direction: row;
+                        grid-area: a;
+                        width: 100%;
+                        background-color: rgb(43, 45, 45);
+                        height:10vh;
+                        align-items: center;
+                        color: white;
+                        padding-left: 10px;
+                    }
+                    .inner{
+                        display: flex;
+                        background-color: grey;
+                        padding: 5px 15px 5px 15px;
+                    }
+                    .inner1{
+                        display: flex;
+                        padding-left: 10px;
+                        padding-right: 30%;  
+                    }
+                    .tpro{
+                        display: grid;
+                        grid-area: b;
+                        grid-template-areas:"b1" "b2";
+                        grid-template-columns: auto auto auto auto auto;
+                    }
+                    .text{
+                        display: flex;
+                        flex-direction: column;
+                        grid-area: b1;
+                        font-size: 20px;
+                        padding: 30px;
+                        height: 100vh;
+                        color: grey;
+                    }
+                    p{
+                        padding-top: 20px;
+                        padding-bottom: 40px;
+                    }
+                    .progress{
+                        padding:30px;
+                    }
+                    .per{
+                        display: flex;
+                        flex-direction: row;
+                        background-color: rgb(45, 170, 45);
+                        justify-content: end;
+                        width: 100%;
+                        height: 4vh;
+
+                    }
+                    .ninty{
+                        display: flex;
+                        flex-direction: row;
+                        padding-left: 25px;
+                        background-color: grey;
+                        height: 4vh;
+                        
+                    }
+                    .seventy{
+                        display: flex;
+                        flex-direction: row;
+                        padding-left: 45px;
+                        background-color: grey;
+                        
+                    }
+                    .eighty{
+                        display: flex;
+                        flex-direction: row;
+                        padding-left: 35px;
+                        background-color: grey;
+                    }
+                    .contact{
+                        display: flex;
+                        border: 2px solid  rgb(45, 170, 45);
+                        width: fit-content;
+                        padding: 10px 40px 10px 40px;
+                        color: rgb(45, 170, 45);
+                    }
+                </style>
+            </head>
+            <body>
+                <div class="nav">
+                    <div class="inner"><h1>F</h1></div>
+                    <div class="inner1"><h1>FO<span style="color:rgb(45, 170, 45);">CAL</span></h1></div>
+                    <h5>HOME</h5>
+                    <h5>ABOUT ME</h5>
+                    <h5 style="color:rgb(45, 170, 45)">SKILLS</h5>
+                    <h5>RESUME</h5>
+                    <h5>TESTIMONIALS</h5>
+                    <h5>PORTFOLIO</h5>
+                    <h5>CONTACT US</h5></div>
+                </div>
+                <div class="tpro">
+                    <div class="text">
+                        <h2>MY SKILLS</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus accusantium officiis ab<br>
+                            in nemo numquam facilis quod harum suscipit, odit aliquam ea eos inventore doloribus <br>
+                            cupiditate autem, deleniti corporis consequatur deserunt! Inventore molestiae nulla ad<br>
+                            optio hic doloremque asperiores vitae?</p>
+                         <div class="contact"><h3>CONTACT ME<h3></div>   
+                    </div>
+                    <div class="progress">
+                         <h2>PHOTOSHOP</h2><br>
+                         <div class="per">90%<div class="ninty"></div></div><br>
+                         <h2>ILLSUTRATOR</h2><br>
+                         <div class="per">80%<div class="eighty"></div></div><br>
+                         <h2>HTML/CSS</h2><br>
+                         <div class="per">90%<div class="ninty"></div></div><br>
+                         <h2>PHP/MYSQL</h2><br>
+                         <div class="per">70%<div class="seventy"></div></div>
+                    </div>
+                </div>
+            </body>
+            </html>

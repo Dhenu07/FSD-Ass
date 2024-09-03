@@ -1,0 +1,43 @@
+<html>
+<head>
+    <style type="text/css">
+        body { margin: 10; }
+    </style>
+</head>
+<body>
+    <form action="/action_page.php">
+        1st Number:<input type="text" id="firstnumber"/><br>
+        2nd Number:<input type="text" id="secondnumber"/><br>
+        <input type="button" onclick="multiplyBy()" value="Multiply"/>
+        <input type="button" onclick="divideBy()" value="Divide"/>
+    </form>
+    <p>The Result is:<br>
+    <span id="result"></span>
+    </p>
+    <script>
+        function divideBy() {
+            const a = parseInt(document.getElementById("firstnumber").value);
+            const b = parseInt(document.getElementById("secondnumber").value);
+
+            if (!isNaN(a) && !isNaN(b)) {
+                const e = a / b;
+                document.getElementById('result').innerText = `${e}`;
+            } else {
+                document.getElementById('result').innerText = "Please enter valid numbers.";
+            }
+        }
+
+        function multiplyBy() {
+            const a = parseInt(document.getElementById("firstnumber").value);
+            const b = parseInt(document.getElementById("secondnumber").value);
+
+            if (!isNaN(a) && !isNaN(b)) {
+                const h = a * b;
+                document.getElementById('result').innerText = `${h}`;
+            } else {
+                document.getElementById('result').innerText = "Please enter valid numbers.";
+            }
+        }
+    </script>
+</body>
+</html>
